@@ -135,6 +135,7 @@ class MainActivity : AppCompatActivity() {
              // bluetoothSocket.connect();
 
         }
+        // 48:E7:29:9F:90:06
 
 
         // Register for broadcasts when a device is discovered.

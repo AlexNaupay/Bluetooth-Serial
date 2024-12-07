@@ -129,6 +129,10 @@ class MainActivity : AppCompatActivity() {
             Log.i(TAG, deviceName)
             Log.i(TAG, device.address)
             Log.i(TAG, device.bondState.toString())
+            if (device.uuids != null && device.uuids.size > 0){
+                Log.i(TAG, device.uuids[0].uuid.toString())
+            }
+
             Log.i(TAG, ".........")
 
              // val bluetoothSocket = device.createRfcommSocketToServiceRecord(MY_UUID)

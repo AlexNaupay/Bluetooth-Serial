@@ -104,6 +104,8 @@ public class SerialActivity extends AppCompatActivity implements ServiceConnecti
             BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
             BluetoothDevice device = bluetoothAdapter.getRemoteDevice(deviceAddress);
             status("connecting...");
+            status(device.getUuids()[0].getUuid().toString());
+
             connected = Connected.Pending;
             SerialSocket socket = new SerialSocket(getApplicationContext(), device);
             service.connect(socket);
